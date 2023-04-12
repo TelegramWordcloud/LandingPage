@@ -24,7 +24,7 @@ export const NAVBAR: ILinkButtonProps[] = [
     },
     {
         text: "Tutorials",
-        src: process.env.NEXT_PUBLIC_TUTORIALS_URL || "",
+        src: "/blog",
         iconSRC: "/images/icons/nav-tutorials.svg"
     }
 ]
