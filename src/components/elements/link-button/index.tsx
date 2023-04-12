@@ -1,14 +1,8 @@
 import Link from "next/link";
 import styled from "styled-components";
-
-const LinkStyling = styled.div`
-  > a {
-    text-decoration: none;
-  }
-  &:hover {
-    opacity: 0.8;
-  }
-`
+import H4 from "@/components/elements/headers/h4";
+import AccentColor from "@/components/elements/accent-color";
+import LinkWrapper from "@/components/elements/link-wrapper";
 
 const LinkContainer = styled.div`
     display: flex;
@@ -20,13 +14,6 @@ const LinkImage = styled.img`
     height: 24px;
 `;
 
-const LinkText = styled.div`
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 23px;
-  color: #374E64;
-`;
-
 export interface ILinkButtonProps {
     text: string,
     iconSRC?: string,
@@ -35,7 +22,7 @@ export interface ILinkButtonProps {
 
 const LinkButton = (props) => {
     return(
-        <LinkStyling>
+        <LinkWrapper>
             <Link href={props.src}>
                 <LinkContainer>
                     {
@@ -43,10 +30,10 @@ const LinkButton = (props) => {
                             <LinkImage src={props.iconSRC} alt={props.text}/> :
                             <></>
                     }
-                    <LinkText>{props.text}</LinkText>
+                    <AccentColor><H4>{props.text}</H4></AccentColor>
                 </LinkContainer>
             </Link>
-        </LinkStyling>
+        </LinkWrapper>
     )
 }
 

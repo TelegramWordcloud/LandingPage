@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
-const P = styled.p`
+const BigP = styled.p`
   font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
+  font-size: 20px;
+  line-height: 23px;
   color: #061525;
-`
+`;
 
-export default P;
+export default BigP;

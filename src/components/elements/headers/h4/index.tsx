@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
-const H2 = styled.h1`
+const H4 = styled.h1`
   font-weight: 700;
-  font-size: 30px;
-  line-height: 35px;
+  font-size: 20px;
+  line-height: 23px;
   color: #061525;
 `
 
-export default H2;
+export default H4;

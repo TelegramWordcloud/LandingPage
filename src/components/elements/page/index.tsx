@@ -1,10 +1,9 @@
 import styled from "styled-components";
-import PageContent from "@/components/page-content";
+import PageContent from "@/components/elements/page-content";
 
 const Section = styled.section`
     width: 100vw;
-    height: 700px;
-    //background: #D0D3D7;
+    height: 100vh;
     position: relative;
     overflow: hidden;
     @media(max-width: 1024px){
@@ -33,7 +32,8 @@ const BackgroundColor = styled.div`
 
 export interface IPageProps{
     children,
-    imageSRC?: string
+    imageSRC?: string,
+
 }
 
 const Page = (props: IPageProps) => {

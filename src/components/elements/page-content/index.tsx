@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 const PageContent = styled.div`
   width: 100vw;
+  height: 100%;
   max-width: 968px;
   margin: 0 auto;
   z-index: 1;
